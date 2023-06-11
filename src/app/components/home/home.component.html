@@ -1,0 +1,49 @@
+<header>
+    <h1 class="text-center diva">{{titulo.titulo1 | uppercase}}</h1>
+</header>
+<section class="animate__animated animate__fadeInUp animate__slow">
+
+    <div class="row mb-1 mt-2">
+        <div class="col-lg-5 text-center mb-3 asas">
+            <a href="assets/img/Eric-Däumler.jpg">
+                <img [src]="titulo.img" alt="Eric Germán Däumler">
+            </a>
+            <h2>{{persona.nombre}}</h2>
+
+        </div>
+        <div class="col-lg-7 diva ">
+            <h2 id="titulo" class="text-center">{{titulo.titulo2 | uppercase}}</h2>
+            <hr>
+            <p>{{persona.info}}</p>
+            <div class="col text-center">
+                <h2>{{titulo.titulo3 | uppercase}}</h2>
+                <hr>
+                <ul>
+                    <li style="text-align: left;">
+                        <h5>
+                            <a href="tel:{{persona.telefono}}">
+                                <span><img src="assets/img/phone-receiver-silhouette.png"
+                                        alt=""></span>{{persona.telefono}}
+                            </a>
+                        </h5>
+                    </li>
+                    <li style="text-align: left;">
+                        <h5>
+                            <a href="mailto: {{persona.mail}}" target="_blank">
+                                <span><img src="assets/img/email.png" alt=""></span>
+                                {{persona.mail}}
+                            </a>
+                        </h5>
+                    </li>
+                    <li style="text-align: left;">
+                        <h5>
+                            <a [href]="persona.linkeIn" target="_blank">
+                                <span><img src="assets/img/linkedin.png" alt=""></span>LinkedIn
+                            </a>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
